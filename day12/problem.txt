@@ -1,0 +1,10 @@
+""""
+A game of guessing any between 1 - 100, The user will get either 5 or 10 attempts depending on the level their chose. 
+The user will be informed if the number is lower/higher than the correct number. 
+"""
+
+
+#generate a random number between 1 to 100. 
+#choose the game level - input if the game is easy then set the chances/attempts to 10 and 5 - hard 
+#choose a number between 1 - 100
+#conditions for each number chosen, inform the user if the number is too low or too high
