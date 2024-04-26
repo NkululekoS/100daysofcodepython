@@ -21,7 +21,7 @@ def main():
     correct_number = random.randint(0,100)
     game_over = False
     
-    while guess != correct_number:
+    while not game_over:
 
         print(f"Your have {attempts} attempts remaining to guess the number")
         guess = int(input("Make a guess: "))
@@ -31,14 +31,16 @@ def main():
         elif guess < correct_number:
             print("Too low.")
         elif guess == correct_number:
+            game_over = True
             print(f"You got it. The correct answer was {guess}.")
-            
+
+        attempts -= 1
         if attempts == 0:
+            game_over = True
             print("You've ran out of guesses, you lose")
-            return
-        elif guess !=  correct_number:
-            attempts -= 1
+        elif not game_over:    
             print("Guess again")
+
 
 if __name__ == "__main__":
     main()
