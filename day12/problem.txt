@@ -1,6 +1,7 @@
 """"
 A game of guessing any number between 1 - 100, The user will get either 5 or 10 attempts depending on the level their chose. 
 The user will be informed if the number is lower/higher than the correct number. 
+The game will end if the number is correct or the 
 """
 
 
